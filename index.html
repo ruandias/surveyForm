@@ -9,13 +9,38 @@
   <h1>Coding Survey</h1>
   <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
   <form id="survey-form" class="survey-form">
-    <labe>Name: </labe>
+    <labe id="name-label">Name: </labe>
     <input id="name" type="text" class="" placeholder="Enter your name" />
-    <labe>Email: </labe>
+    <labe id="email-label">Email: </labe>
     <input id="email" type="email" class="" placeholder="Enter your email" />
-    <label>Age: </label>
+    <label id="number-label">Age: </label>
     <input id="number" type="number" class="" placeholder="Enter your age" />
-
+    <select id="dropdow">
+      <option selected>Select your favorite programming language</option>
+      <option>Javscript</option>
+      <option>Python</option>
+      <option>C#</option>
+      <option>Java</option>
+      <option>C</option>
+    </select>
+    <p>How many days per week do you code ?</p>
+    <input type="radio" name="frequency" value="0">
+    <label>0</label>
+    <input type="radio" name="frequency" value="3">
+    <labe>3 days</labe>
+    <input type="radio" name="frequency" value="7">
+    <label>7 days</label>
+    <p>What's your favorite Operating System ?</p>
+    <input type="checkbox" name="os" value="windows">
+    <label>Windows</label>
+    <input type="checkbox" name="os" value="macos">
+    <labe>Mac OS</labe>
+    <input type="checkbox" name="os" value="ubuntu">
+    <label>Ubuntu</label>
+    <p>Tell me more about your professional skills:</p>
+    <label>Professional skills: </label>
+    <textarea rows="4" cols="50"></textarea>
+    <button type="submit" id="submit">Submit</button>
   </form>
 </body>
 </html>
